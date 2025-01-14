@@ -1,0 +1,254 @@
+<head>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+    <title>Rocket Elevators - Multipurpose + Admin</title>
+    <link rel="icon" href="assets/images/rocketElevators/favicon.ico" />
+
+    <!-- MOBILE SETTINGS -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- WEB FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+      rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME CSS -->
+    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+  </head>
+
+<!-- HEADER -->
+<header id="header" class="navbar-toggleable-md sticky header-md clearfix">
+    <div id="topNav">
+      <div class="container">
+        <!-- Mobile Menu Button -->
+        <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a class="logo float-left scrollTo" href="#top">
+          <img src="/assets/images/rocketElevators/rocketLogo.png" alt="" />
+        </a>
+
+        <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+          <nav class="nav-main">
+            <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+              <!-- HOME -->
+              <!-- SERVICES -->
+              <li>
+                <a href="#services">Services </a>
+              </li>
+              <!-- WORK -->
+              <li>
+                <a href="#work">Work </a>
+              </li>
+              <!-- NEWS -->
+              <li>
+                <a href="#news">News </a>
+              </li>
+              <!-- OVERVIEW -->
+              <li>
+                <a href="#overview">Overview </a>
+              </li>
+              <!-- CLIENTS -->
+              <li>
+                <a href="#clients">Clients </a>
+              </li>
+              <!-- CONTACT -->
+              <li>
+                <a href="#contact">Contact Us! </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!---HEADER-->
+
+<body>
+  <!---FORM AREA for Category Buttons-->
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="residentialButton">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Residential
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="commercialButton">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Commercial
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="industrialButton">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Industrial
+    </label>
+  </div>
+
+   <!---FORM AREA for Category Buttons-->
+    
+  <!---UPPER FIELD BODY SECTIONS-->
+
+    <div id="div-number-of-apartments" class="input-field">
+      <label>Number of Apartments</label>
+      <input id="number-of-apartments" type="number" min="0"/> 
+    </div>
+
+    <div id="div-number-of-floors" class="input-field">
+      <label>Number of Floors</label>
+      <input id="number-of-floors" type="number" min="0"/>
+    </div>
+
+    <div id="div-number-of-elevators" class="input-field">
+      <label>Number of Elevators</label>
+      <input id="number-of-elevators" type="number"/>
+    </div>
+
+    <div id="div-maximum-occupancy" class="input-field">
+      <label>Maximum Occupancy</label>
+      <input id="maxmimum-occupancy" type="number"/>
+    </div>
+    
+  <!---UPPER FIELD BODY SECTIONS-->
+
+  <!--Radio Buttons IDs for Class Tiers-->
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="tierButton" id="standardtierButton">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Standard
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="tierButton" id="premiumtierButton">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Premium
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="tierButton" id="excelliumtierButton">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Excellium
+    </label>
+  </div>
+
+  <!--Radio Buttons IDs for Class Tiers-->
+
+
+<!---LOWER BODY FIELD SECTIONS-->
+<div class="div-elevators-required">
+  <label>Elevators Required</label>
+  <input id="elevators-required" type="text" readonly/>
+</div>
+
+<div id="div-cost-per-unit" class="input-field">
+  <label>Cost Per Unit</label>
+  <input id="cost-per-unit" type="text" readonly/>
+</div>
+
+<div id="div-installation-fees" class="input-field">
+  <label>Installation Fees</label>
+  <input id="installation-fees" type="text" readonly/>
+</div>
+
+<div id="div-total-cost" class="input-field">
+  <label>Total Cost</label>
+  <input id="total-cost" type="text" readonly/>
+</div>
+<!---LOWER BODY FIELD SECTIONS-->
+
+
+
+  <!---FORM AREA-->
+</body>
+
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- col #1 -->
+        <div class="col-md-8">
+          <h3 class="letter-spacing-1">WHY US?</h3>
+
+          <!-- Small Description -->
+          <p>
+          Being in business all these years has taught us one thing - the customers we serve are the lifeline of our business.
+          We've never stopped believing that and we won't now.
+          </p>
+          <h2>(800) 123-4567</h2>
+        </div>
+        <!-- /col #1 -->
+
+        <!-- col #2 -->
+        <div class="col-md-4">
+          <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+          <!-- Newsletter Form -->
+          <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+          <form class="validate" action="assets/php/newsletter.php" method="post"
+            data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+              <label>
+                <input type="email" id="email" name="email" class="form-control required"
+                  placeholder="Enter your Email" />
+              </label>
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="submit">
+                  Subscribe
+                </button>
+              </span>
+            </div>
+          </form>
+          <!-- /Newsletter Form -->
+        </div>
+        <!-- /col #2 -->
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <ul class="float-right m-0 list-inline mobile-block">
+          <li><a href="">Terms &amp; Conditions</a></li>
+          <li>&bull;</li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+        &copy; All Rights Reserved, Company LTD
+      </div>
+    </div>
+
+    <script src="./quote.js"></script>
+  </footer>
+  <!-- /FOOTER -->
+
+
+
+
+
+
+
+
